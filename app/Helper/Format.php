@@ -17,12 +17,12 @@ class Format
 	}
 	public static function date(string $date)
 	{
-		$d = new \Carbon\Carbon::parse($date, config('app.timezone'));
+		$d = \Carbon\Carbon::parse($date, config('app.timezone'));
 		return $d->format("d \d\e F Y");
 	}
 	public static function shortDate(string $date)
 	{
-		$d = new \Carbon\Carbon::parse($date, config('app.timezone'));
+		$d = \Carbon\Carbon::parse($date, config('app.timezone'));
 		return $d->format('d-m-Y');
 	}
 }
