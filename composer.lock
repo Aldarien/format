@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "61056a3e168a547b0e2228e42494c581",
+    "content-hash": "02e682d12418f91ec2ab892ebfb5e410",
     "packages": [
         {
             "name": "nesbot/carbon",
@@ -185,6 +185,122 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "aldarien/config",
+            "version": "1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Aldarien/config.git",
+                "reference": "db8ed4b89f7bfa85e74feb98fc1697388fdb7f03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Aldarien/config/zipball/db8ed4b89f7bfa85e74feb98fc1697388fdb7f03",
+                "reference": "db8ed4b89f7bfa85e74feb98fc1697388fdb7f03",
+                "shasum": ""
+            },
+            "require": {
+                "aldarien/contract": "~1",
+                "aldarien/root": "^1.0",
+                "symfony/yaml": "^3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "app"
+                },
+                "files": [
+                    "app/Helper/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aldarien",
+                    "email": "aldarien85@gmail.com"
+                }
+            ],
+            "description": "Config module for my apps",
+            "time": "2017-09-25T21:33:09+00:00"
+        },
+        {
+            "name": "aldarien/contract",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Aldarien/contract.git",
+                "reference": "2651fa8f7836582a393b55b6621e3a0504bd50bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Aldarien/contract/zipball/2651fa8f7836582a393b55b6621e3a0504bd50bb",
+                "reference": "2651fa8f7836582a393b55b6621e3a0504bd50bb",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "app"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aldarien",
+                    "email": "aldarien85@gmail.com"
+                }
+            ],
+            "description": "Contract trait for my apps",
+            "time": "2017-08-10T23:56:31+00:00"
+        },
+        {
+            "name": "aldarien/root",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Aldarien/root.git",
+                "reference": "56109969b3d1d0cc929f2241353811b0e1bd37e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Aldarien/root/zipball/56109969b3d1d0cc929f2241353811b0e1bd37e5",
+                "reference": "56109969b3d1d0cc929f2241353811b0e1bd37e5",
+                "shasum": ""
+            },
+            "require-dev": {
+                "kint-php/kint": "~2",
+                "phpunit/phpunit": "~6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Proyect\\Root\\": "src"
+                },
+                "files": [
+                    "app/Helper/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aldarien"
+                }
+            ],
+            "description": "Find the root path for your proyect",
+            "time": "2017-08-25T22:17:03+00:00"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.1.0",
@@ -1543,6 +1659,64 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "eab73b6c21d27ae4cd037c417618dfd4befb0bfe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/eab73b6c21d27ae4cd037c417618dfd4befb0bfe",
+                "reference": "eab73b6c21d27ae4cd037c417618dfd4befb0bfe",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "conflict": {
+                "symfony/console": "<3.4"
+            },
+            "require-dev": {
+                "symfony/console": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-01-21T19:05:02+00:00"
         },
         {
             "name": "theseer/tokenizer",
