@@ -3,8 +3,8 @@
 	"description" : "Module for formatting data, mostly numbers",
 	"type" : "library",
 	"require-dev" : {
-		"phpunit/phpunit" : "^6.3",
-		"aldarien/config": "^1.0"
+		"phpunit/phpunit" : "^6",
+		"aldarien/config": "^2"
 	},
 	"license" : "MIT",
 	"authors" : [{
