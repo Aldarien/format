@@ -3,7 +3,8 @@
 	"description" : "Module for formatting data, mostly numbers",
 	"type" : "library",
 	"require-dev" : {
-		"phpunit/phpunit" : "^6.3"
+		"phpunit/phpunit" : "^6",
+		"aldarien/config": "^1"
 	},
 	"license" : "MIT",
 	"authors" : [{
@@ -17,6 +18,6 @@
 		}
 	},
 	"require": {
-		"nesbot/carbon": "^1.22"
+		"nesbot/carbon": "^2"
 	}
 }
