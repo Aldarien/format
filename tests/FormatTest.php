@@ -6,7 +6,7 @@ class FormatTest extends TestCase
 {
 	protected $number = 5049872.31567;
 	protected $date = '2016-03-25';
-	
+
 	public function testFormat()
 	{
 		$output = '5.049.872,316';
@@ -28,19 +28,19 @@ class FormatTest extends TestCase
 	public function testDate()
 	{
 		$output = '25 de March 2016';
-		$result = Format::date($this->date);
+		$result = Format::date($this->date, 'America/Santiago');
 		$this->assertEquals($output, $result);
 	}
 	public function testShortDate()
 	{
 		$output = '25-03-2016';
-		$result = Format::shortDate($this->date);
+		$result = Format::shortDate($this->date, 'America/Santiago');
 		$this->assertEquals($output, $result);
 	}
 	public function testLocalDate()
 	{
 		$output = '25 de marzo de 2016';
-		$result = Format::localDate($this->date);
+		$result = Format::localDate($this->date, 'America/Santiago');
 		$this->assertEquals($output, $result);
 	}
 	public function testM2Print()
